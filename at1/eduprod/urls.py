@@ -1,6 +1,7 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
 
+app_name = 'eduprod'
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('users/', include('users.urls')),
+    path('eduprod/', include('eduprod.urls')), 
 ]

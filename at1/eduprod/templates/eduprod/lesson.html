@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Punctuation Learning Tool</title>
+    <!-- Use Django static files syntax to link CSS -->
+    <link rel="stylesheet" href="{% static 'eduprod/css/styles.css' %}">
+</head>
+<body>
+    <h1>Punctuation Learning Tool</h1>
+    <div id="menu">
+        <button id="startLesson">Start Lesson</button>
+    </div>
+    {% if question %}
+    <div id="lesson" style="display:block;">
+        <p id="sentence">{{ question.sentence }}</p>
+        <!-- Display form/input for answer here -->
+        <!-- Logic to display punctuations and submit button -->
+        <div id="punctuations">
+            <!-- Draggable punctuations -->
+            <span class="punctuation" draggable="true">,</span>
+            <span class="punctuation" draggable="true">.</span>
+            <span class="punctuation" draggable="true">?</span>
+        </div>
+        <button id="checkAnswer" style="display:none;">Check Answer</button>
+    </div>
+    {% else %}
+    <p>No questions available.</p>
+    {% endif %}
+    <!-- Use Django static files syntax to link JS -->
+    <script src="{% static 'eduprod/js/script.js' %}"></script>
+</body>
+</html>

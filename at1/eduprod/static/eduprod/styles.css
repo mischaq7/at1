@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#punctuations span {
+    margin: 0 5px;
+    cursor: grab;
+}
+
+.punctuation-placeholder {
+    border-bottom: 2px dashed #666;
+    display: inline-block;
+    width: 20px;
+}
