@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Punctuation Learning Tool</title>
     <!-- Use Django static files syntax to link CSS -->
-    <link rel="stylesheet" href="{% static 'eduprod/css/styles.css' %}">
+    <link rel="stylesheet" href= "{% static 'eduprod/css/styles.css' %}">
 </head>
 <body>
     <h1>Punctuation Learning Tool</h1>
@@ -28,7 +28,6 @@
     {% else %}
     <p>No questions available.</p>
     {% endif %}
-    <!-- Use Django static files syntax to link JS -->
     <script src="{% static 'eduprod/js/script.js' %}"></script>
 </body>
 </html>

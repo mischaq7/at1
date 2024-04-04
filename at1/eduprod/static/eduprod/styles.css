@@ -1,14 +1,82 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #f0f0f0;
 }
 
-#punctuations span {
-    margin: 0 5px;
-    cursor: grab;
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #ff6600; 
+  margin-top: 50px;
 }
 
-.punctuation-placeholder {
-    border-bottom: 2px dashed #666;
-    display: inline-block;
-    width: 20px;
+
+#menu {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#startLessonBtn {
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #33ccff; 
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+#lesson {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#sentence {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#punctuations {
+  display: flex;
+  justify-content: center;
+}
+
+.punctuation {
+  font-size: 24px;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #b57cee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#feedback {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#incorrectAnswer {
+  color: red;
+}
+
+#nextQuestionBtn {
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #33cc33; 
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
